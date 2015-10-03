@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38CA609E1BBF6FCD00ABB52E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA609D1BBF6FCD00ABB52E /* main.m */; };
+		38CA60A11BBF6FCD00ABB52E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA60A01BBF6FCD00ABB52E /* AppDelegate.m */; };
+		38CA60A41BBF6FCD00ABB52E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA60A31BBF6FCD00ABB52E /* ViewController.m */; };
+		38CA60A71BBF6FCD00ABB52E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA60A51BBF6FCD00ABB52E /* Main.storyboard */; };
+		38CA60AA1BBF6FCD00ABB52E /* jamocracy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38CA60A81BBF6FCD00ABB52E /* jamocracy.xcdatamodeld */; };
+		38CA60AC1BBF6FCD00ABB52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA60AB1BBF6FCD00ABB52E /* Assets.xcassets */; };
+		38CA60AF1BBF6FCD00ABB52E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA60AD1BBF6FCD00ABB52E /* LaunchScreen.storyboard */; };
+		38CA60BA1BBF6FCD00ABB52E /* jamocracyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA60B91BBF6FCD00ABB52E /* jamocracyTests.m */; };
+		38CA60C51BBF6FCD00ABB52E /* jamocracyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA60C41BBF6FCD00ABB52E /* jamocracyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38CA60B61BBF6FCD00ABB52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CA60911BBF6FCD00ABB52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38CA60981BBF6FCD00ABB52E;
+			remoteInfo = jamocracy;
+		};
+		38CA60C11BBF6FCD00ABB52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CA60911BBF6FCD00ABB52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38CA60981BBF6FCD00ABB52E;
+			remoteInfo = jamocracy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38CA60991BBF6FCD00ABB52E /* jamocracy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jamocracy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CA609D1BBF6FCD00ABB52E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38CA609F1BBF6FCD00ABB52E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38CA60A01BBF6FCD00ABB52E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38CA60A21BBF6FCD00ABB52E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		38CA60A31BBF6FCD00ABB52E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		38CA60A61BBF6FCD00ABB52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38CA60A91BBF6FCD00ABB52E /* jamocracy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = jamocracy.xcdatamodel; sourceTree = "<group>"; };
+		38CA60AB1BBF6FCD00ABB52E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38CA60AE1BBF6FCD00ABB52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38CA60B01BBF6FCD00ABB52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CA60B51BBF6FCD00ABB52E /* jamocracyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jamocracyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CA60B91BBF6FCD00ABB52E /* jamocracyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jamocracyTests.m; sourceTree = "<group>"; };
+		38CA60BB1BBF6FCD00ABB52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CA60C01BBF6FCD00ABB52E /* jamocracyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jamocracyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CA60C41BBF6FCD00ABB52E /* jamocracyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jamocracyUITests.m; sourceTree = "<group>"; };
+		38CA60C61BBF6FCD00ABB52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38CA60961BBF6FCD00ABB52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA60B21BBF6FCD00ABB52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA60BD1BBF6FCD00ABB52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38CA60901BBF6FCD00ABB52E = {
+			isa = PBXGroup;
+			children = (
+				38CA609B1BBF6FCD00ABB52E /* jamocracy */,
+				38CA60B81BBF6FCD00ABB52E /* jamocracyTests */,
+				38CA60C31BBF6FCD00ABB52E /* jamocracyUITests */,
+				38CA609A1BBF6FCD00ABB52E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38CA609A1BBF6FCD00ABB52E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38CA60991BBF6FCD00ABB52E /* jamocracy.app */,
+				38CA60B51BBF6FCD00ABB52E /* jamocracyTests.xctest */,
+				38CA60C01BBF6FCD00ABB52E /* jamocracyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38CA609B1BBF6FCD00ABB52E /* jamocracy */ = {
+			isa = PBXGroup;
+			children = (
+				38CA609F1BBF6FCD00ABB52E /* AppDelegate.h */,
+				38CA60A01BBF6FCD00ABB52E /* AppDelegate.m */,
+				38CA60A21BBF6FCD00ABB52E /* ViewController.h */,
+				38CA60A31BBF6FCD00ABB52E /* ViewController.m */,
+				38CA60A51BBF6FCD00ABB52E /* Main.storyboard */,
+				38CA60AB1BBF6FCD00ABB52E /* Assets.xcassets */,
+				38CA60AD1BBF6FCD00ABB52E /* LaunchScreen.storyboard */,
+				38CA60B01BBF6FCD00ABB52E /* Info.plist */,
+				38CA60A81BBF6FCD00ABB52E /* jamocracy.xcdatamodeld */,
+				38CA609C1BBF6FCD00ABB52E /* Supporting Files */,
+			);
+			path = jamocracy;
+			sourceTree = "<group>";
+		};
+		38CA609C1BBF6FCD00ABB52E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38CA609D1BBF6FCD00ABB52E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38CA60B81BBF6FCD00ABB52E /* jamocracyTests */ = {
+			isa = PBXGroup;
+			children = (
+				38CA60B91BBF6FCD00ABB52E /* jamocracyTests.m */,
+				38CA60BB1BBF6FCD00ABB52E /* Info.plist */,
+			);
+			path = jamocracyTests;
+			sourceTree = "<group>";
+		};
+		38CA60C31BBF6FCD00ABB52E /* jamocracyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38CA60C41BBF6FCD00ABB52E /* jamocracyUITests.m */,
+				38CA60C61BBF6FCD00ABB52E /* Info.plist */,
+			);
+			path = jamocracyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38CA60981BBF6FCD00ABB52E /* jamocracy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CA60C91BBF6FCD00ABB52E /* Build configuration list for PBXNativeTarget "jamocracy" */;
+			buildPhases = (
+				38CA60951BBF6FCD00ABB52E /* Sources */,
+				38CA60961BBF6FCD00ABB52E /* Frameworks */,
+				38CA60971BBF6FCD00ABB52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jamocracy;
+			productName = jamocracy;
+			productReference = 38CA60991BBF6FCD00ABB52E /* jamocracy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38CA60B41BBF6FCD00ABB52E /* jamocracyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CA60CC1BBF6FCD00ABB52E /* Build configuration list for PBXNativeTarget "jamocracyTests" */;
+			buildPhases = (
+				38CA60B11BBF6FCD00ABB52E /* Sources */,
+				38CA60B21BBF6FCD00ABB52E /* Frameworks */,
+				38CA60B31BBF6FCD00ABB52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38CA60B71BBF6FCD00ABB52E /* PBXTargetDependency */,
+			);
+			name = jamocracyTests;
+			productName = jamocracyTests;
+			productReference = 38CA60B51BBF6FCD00ABB52E /* jamocracyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38CA60BF1BBF6FCD00ABB52E /* jamocracyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CA60CF1BBF6FCD00ABB52E /* Build configuration list for PBXNativeTarget "jamocracyUITests" */;
+			buildPhases = (
+				38CA60BC1BBF6FCD00ABB52E /* Sources */,
+				38CA60BD1BBF6FCD00ABB52E /* Frameworks */,
+				38CA60BE1BBF6FCD00ABB52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38CA60C21BBF6FCD00ABB52E /* PBXTargetDependency */,
+			);
+			name = jamocracyUITests;
+			productName = jamocracyUITests;
+			productReference = 38CA60C01BBF6FCD00ABB52E /* jamocracyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38CA60911BBF6FCD00ABB52E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = orbisbutbetter;
+				TargetAttributes = {
+					38CA60981BBF6FCD00ABB52E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8P4FQ3Z5MY;
+					};
+					38CA60B41BBF6FCD00ABB52E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8P4FQ3Z5MY;
+						TestTargetID = 38CA60981BBF6FCD00ABB52E;
+					};
+					38CA60BF1BBF6FCD00ABB52E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8P4FQ3Z5MY;
+						TestTargetID = 38CA60981BBF6FCD00ABB52E;
+					};
+				};
+			};
+			buildConfigurationList = 38CA60941BBF6FCD00ABB52E /* Build configuration list for PBXProject "jamocracy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38CA60901BBF6FCD00ABB52E;
+			productRefGroup = 38CA609A1BBF6FCD00ABB52E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38CA60981BBF6FCD00ABB52E /* jamocracy */,
+				38CA60B41BBF6FCD00ABB52E /* jamocracyTests */,
+				38CA60BF1BBF6FCD00ABB52E /* jamocracyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38CA60971BBF6FCD00ABB52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CA60AF1BBF6FCD00ABB52E /* LaunchScreen.storyboard in Resources */,
+				38CA60AC1BBF6FCD00ABB52E /* Assets.xcassets in Resources */,
+				38CA60A71BBF6FCD00ABB52E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA60B31BBF6FCD00ABB52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA60BE1BBF6FCD00ABB52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38CA60951BBF6FCD00ABB52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CA60A41BBF6FCD00ABB52E /* ViewController.m in Sources */,
+				38CA60A11BBF6FCD00ABB52E /* AppDelegate.m in Sources */,
+				38CA609E1BBF6FCD00ABB52E /* main.m in Sources */,
+				38CA60AA1BBF6FCD00ABB52E /* jamocracy.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA60B11BBF6FCD00ABB52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CA60BA1BBF6FCD00ABB52E /* jamocracyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA60BC1BBF6FCD00ABB52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CA60C51BBF6FCD00ABB52E /* jamocracyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38CA60B71BBF6FCD00ABB52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38CA60981BBF6FCD00ABB52E /* jamocracy */;
+			targetProxy = 38CA60B61BBF6FCD00ABB52E /* PBXContainerItemProxy */;
+		};
+		38CA60C21BBF6FCD00ABB52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38CA60981BBF6FCD00ABB52E /* jamocracy */;
+			targetProxy = 38CA60C11BBF6FCD00ABB52E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38CA60A51BBF6FCD00ABB52E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38CA60A61BBF6FCD00ABB52E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38CA60AD1BBF6FCD00ABB52E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38CA60AE1BBF6FCD00ABB52E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38CA60C71BBF6FCD00ABB52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38CA60C81BBF6FCD00ABB52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38CA60CA1BBF6FCD00ABB52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = jamocracy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkrum.jamocracy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38CA60CB1BBF6FCD00ABB52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = jamocracy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkrum.jamocracy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38CA60CD1BBF6FCD00ABB52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = jamocracyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkrum.jamocracyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jamocracy.app/jamocracy";
+			};
+			name = Debug;
+		};
+		38CA60CE1BBF6FCD00ABB52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = jamocracyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkrum.jamocracyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jamocracy.app/jamocracy";
+			};
+			name = Release;
+		};
+		38CA60D01BBF6FCD00ABB52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = jamocracyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkrum.jamocracyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = jamocracy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		38CA60D11BBF6FCD00ABB52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = jamocracyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkrum.jamocracyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = jamocracy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38CA60941BBF6FCD00ABB52E /* Build configuration list for PBXProject "jamocracy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CA60C71BBF6FCD00ABB52E /* Debug */,
+				38CA60C81BBF6FCD00ABB52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38CA60C91BBF6FCD00ABB52E /* Build configuration list for PBXNativeTarget "jamocracy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CA60CA1BBF6FCD00ABB52E /* Debug */,
+				38CA60CB1BBF6FCD00ABB52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38CA60CC1BBF6FCD00ABB52E /* Build configuration list for PBXNativeTarget "jamocracyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CA60CD1BBF6FCD00ABB52E /* Debug */,
+				38CA60CE1BBF6FCD00ABB52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38CA60CF1BBF6FCD00ABB52E /* Build configuration list for PBXNativeTarget "jamocracyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CA60D01BBF6FCD00ABB52E /* Debug */,
+				38CA60D11BBF6FCD00ABB52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		38CA60A81BBF6FCD00ABB52E /* jamocracy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38CA60A91BBF6FCD00ABB52E /* jamocracy.xcdatamodel */,
+			);
+			currentVersion = 38CA60A91BBF6FCD00ABB52E /* jamocracy.xcdatamodel */;
+			path = jamocracy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 38CA60911BBF6FCD00ABB52E /* Project object */;
+}
