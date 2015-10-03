@@ -17,7 +17,7 @@
 								album_uri: item.album.uri,
 								cover_url: '',
 								uri: item.uri
-							}
+							};
 							if (item.artists.length > 0) {
 								ret.artist = item.artists[0].name;
 								ret.artist_uri = item.artists[0].uri;
@@ -33,7 +33,7 @@
 				});
 			}
 		});
-	}
+	};
 	var g_access_token = '';
 	var g_username = '';
 	var client_id = '';
@@ -54,25 +54,41 @@
 		localStorage.setItem('createplaylist-tracks', JSON.stringify(g_tracks));
 		localStorage.setItem('createplaylist-name', g_name);
 		var w = window.open(url, 'asdf', 'WIDTH=400,HEIGHT=500');
-	}
+	};
 
-	exports.startApp = function() {
+	exports.startApp = function(a_t) {
 		Parse.initialize("89wcy5awrnsiWO6r1PpJQOIlSSuoa0KQ7jOYxCB6", "2j6tsHCxhO55tVyxfua7kSeZfHCIk7E67R3pNgRs");
 		var Text = Parse.Object.extend("Text");
 		var query = new Parse.Query(Text);
+		var songURI;
 		query.descending("createdAt");
 		query.first({
 		success: function(results) {
 			var message = results.get("body");
 			doSearch(message, function(result) {
-				window.alert(result.track[0].uri);
+				songURI = result.track[0].uri;
+				window.alert(JSON.stringify(songURI));
+				var url = 'https://api.spotify.com/v1/users/krrgn3/playlists/3QfJtoy0hqSty9XdkJUJj0/tracks/?uris='+encodeURIComponent(songURI);
+				$.ajax(url, {
+					method: 'POST',
+					//data: JSON.stringify(tracks),
+					dataType: 'text',
+					headers: {
+						'Authorization': 'Bearer ' + a_t,
+						'Content-Type': 'application/json'
+					},
+					success: function(r) {
+						console.log('add track response', r);
+					},
+					error: function(r) {
+						console.log(a_t);
+					}
+				});
 			});
-
 		},
 		error: function(error) {
 			alert("Error: " + error.code + " " + error.message);
 		}
 		});
-		}
-
+	};
 })(window);
