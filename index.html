@@ -2,10 +2,11 @@
 <html>
     <head>
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
-    <script type="text/javascript" src="parseObj.js"></script>
+    <script type="text/javascript" src="app2.js"></script>
+    <!--<script type="text/javascript" src="parseObj.js"></script>-->
     <title>Jamocracy</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
     <style type="text/css">
       #login, #loggedin {
         display: none;
@@ -21,7 +22,7 @@
 
   <body style="background: url(edmcrowd.jpg)">
   <div class="container">
-    <div class="col-sm-12 col-xs-12"
+    <div class="col-sm-12 col-xs-12">
       <h1 style="font-family: 'Orbitron', sans-serif; font-size: 72pt; position: relative; top: 70px; text-align: center; color: white;">Jamocracy</h1>
     </div>
   </div>
@@ -35,7 +36,7 @@
         </div>
         <div id="oauth">
         </div>
-	   <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button> 
+	   <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
       </div>
     </div>
 
@@ -56,7 +57,7 @@
             <dt>Country</dt><dd>{{country}}</dd>
           </dl>
         </div>
-</div> 
+</div>
     </script>
 
     <script id="oauth-template" type="text/x-handlebars-template">
@@ -64,14 +65,13 @@
       <dl class="dl-horizontal">
         <dt>Access token</dt><dd class="text-overflow">{{access_token}}</dd>
         <dt>Refresh token</dt><dd class="text-overflow">{{refresh_token}}></dd>
-</dl> 
+</dl>
     </script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
       (function() {
-
         /**
          * Obtains parameters from the hash of the URL
          * @return Object
@@ -85,21 +85,16 @@
           }
           return hashParams;
         }
-
         var userProfileSource = document.getElementById('user-profile-template').innerHTML,
             userProfileTemplate = Handlebars.compile(userProfileSource),
 	    userProfilePlaceholder = document.getElementById('user-profile');
-
         var oauthSource = document.getElementById('oauth-template').innerHTML,
             oauthTemplate = Handlebars.compile(oauthSource),
             oauthPlaceholder = document.getElementById('oauth');
-
         var params = getHashParams();
-
         var access_token = params.access_token,
             refresh_token = params.refresh_token,
             error = params.error;
-
         if (error) {
           alert('There was an error during the authentication');
         } else {
@@ -109,7 +104,6 @@
               access_token: access_token,
               refresh_token: refresh_token
             });
-
             $.ajax({
                 url: 'https://api.spotify.com/v1/me',
                 headers: {
@@ -117,17 +111,16 @@
                 },
                 success: function(response) {
                   userProfilePlaceholder.innerHTML = userProfileTemplate(response);
-
                   $('#login').hide();
                   $('#loggedin').show();
                 }
             });
+            startApp(params.access_token);
           } else {
               // render initial screen
               $('#login').show();
               $('#loggedin').hide();
           }
-
           document.getElementById('obtain-new-token').addEventListener('click', function() {
             $.ajax({
               url: '/refresh_token',
@@ -147,4 +140,3 @@
     </script>
   </body>
 </html>
-
