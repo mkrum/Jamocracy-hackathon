@@ -92,27 +92,27 @@
                   $('#loggedin').show();
                 }
             });
-            alert("Enjoy! Send your song requests to (978) 798-6085.")
-            startApp(params.access_token);
+            alert("Enjoy! Send your song requests to (978) 798-6085.");
+            setInterval(function() { startApp(params.access_token); }, 3000);
           } else {
               // render initial screen
               $('#login').show();
               $('#loggedin').hide();
           }
-          document.getElementById('obtain-new-token').addEventListener('click', function() {
-            $.ajax({
-              url: '/refresh_token',
-              data: {
-                'refresh_token': refresh_token
-              }
-            }).done(function(data) {
-              access_token = data.access_token;
-              oauthPlaceholder.innerHTML = oauthTemplate({
-                access_token: access_token,
-                refresh_token: refresh_token
-              });
-            });
-          }, false);
+          // document.getElementById('obtain-new-token').addEventListener('click', function() {
+          //   $.ajax({
+          //     url: '/refresh_token',
+          //     data: {
+          //       'refresh_token': refresh_token
+          //     }
+          //   }).done(function(data) {
+          //     access_token = data.access_token;
+          //     oauthPlaceholder.innerHTML = oauthTemplate({
+          //       access_token: access_token,
+          //       refresh_token: refresh_token
+          //     });
+          //   });
+          // }, false);
         }
       })();
     </script>

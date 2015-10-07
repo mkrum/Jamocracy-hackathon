@@ -64,27 +64,41 @@
 		query.descending("createdAt");
 		query.first({
 		success: function(results) {
+			if(results !== undefined){
 			var message = results.get("body");
+			var added = results.get("added");
 			doSearch(message, function(result) {
 				songURI = result.track[0].uri;
-				window.alert(JSON.stringify(songURI));
+				console.log(JSON.stringify(songURI));
 				var url = 'https://api.spotify.com/v1/users/krrgn3/playlists/3QfJtoy0hqSty9XdkJUJj0/tracks/?uris='+encodeURIComponent(songURI);
-				$.ajax(url, {
-					method: 'POST',
-					//data: JSON.stringify(tracks),
-					dataType: 'text',
-					headers: {
-						'Authorization': 'Bearer ' + a_t,
-						'Content-Type': 'application/json'
-					},
-					success: function(r) {
-						console.log('add track response', r);
-					},
-					error: function(r) {
-						console.log(a_t);
-					}
-				});
+					$.ajax(url, {
+						method: 'POST',
+						//data: JSON.stringify(tracks),
+						dataType: 'text',
+						headers: {
+							'Authorization': 'Bearer ' + a_t,
+							'Content-Type': 'application/json'
+						},
+						success: function(r) {
+							console.log('add track response', r);
+							results.destroy({
+							  success: function(results) {
+							    // The object was deleted from the Parse Cloud.
+									console.log("deleted");
+							  },
+							  error: function(results, error) {
+							    // The delete failed.
+							    // error is a Parse.Error with an error code and message.
+									console.log(error);
+							  }
+							});
+						},
+						error: function(r) {
+							console.log(a_t);
+						}
+					});
 			});
+		}
 		},
 		error: function(error) {
 			alert("Error: " + error.code + " " + error.message);
